@@ -23,7 +23,7 @@
           class="hidden-md-and-up"
           @click="drawer = !drawer"
         ></v-app-bar-nav-icon>
-        <v-toolbar-title>Ad list</v-toolbar-title>
+        <v-toolbar-title>Intranet</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
           <v-btn
@@ -52,7 +52,7 @@ export default {
     return {
       drawer: false,
       links: [
-        { title: 'Signin', icon: 'lock', url: '/signin' },
+        { title: 'Вход', icon: 'lock', url: '/signin' },
         { title: 'Signup', icon: 'face', url: '/signup' },
         { title: 'Orders', icon: 'bookmark_border', url: '/orders' },
       ],
