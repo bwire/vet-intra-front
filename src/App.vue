@@ -53,7 +53,7 @@ export default {
       drawer: false,
       links: [
         { title: 'Вход', icon: 'lock', url: '/signin' },
-        { title: 'Signup', icon: 'face', url: '/signup' },
+        { title: 'Регистрация', icon: 'face', url: '/signup' },
         { title: 'Orders', icon: 'bookmark_border', url: '/orders' },
       ],
     };
