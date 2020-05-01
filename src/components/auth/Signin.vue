@@ -25,7 +25,7 @@
                 type="password"
                 :counter="6"
                 v-model="password"
-                :rules="[rules.required, rules.counter]"
+                :rules="[rules.required, rules.counter(6)]"
               />
             </v-form>
           </v-card-text>
@@ -40,6 +40,8 @@
 </template>
 
 <script>
+import validators from '../../common/validators';
+
 export default {
   data() {
     return {
@@ -47,12 +49,9 @@ export default {
       password: '',
       valid: false,
       rules: {
-        required: (value) => !!value || 'Обязательное поле',
-        counter: (value) => value.length >= 6 || 'Минимальная длина - 6 символов',
-        email: (value) => {
-          const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-          return pattern.test(value) || 'Неправильный e-mail.';
-        },
+        required: validators.required,
+        counter: validators.counter,
+        email: validators.email,
       },
     };
   },
