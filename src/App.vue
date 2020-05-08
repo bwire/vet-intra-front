@@ -55,7 +55,7 @@ export default {
       links: [
         { title: 'Вход', icon: 'lock', url: '/signin' },
         { title: 'Регистрация', icon: 'face', url: '/signup' },
-        { title: 'Orders', icon: 'bookmark_border', url: '/orders' },
+        { title: 'Заявки', icon: 'bookmark_border', url: '/orders' },
       ],
     };
   },
