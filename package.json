@@ -38,6 +38,7 @@
     "vuetify-loader": "^1.3.0"
   },
   "resolutions": {
-    "meow": "6.0.0"
+    "meow": "6.0.0",
+    "normalize-url": "4.5.1"
   }
 }
